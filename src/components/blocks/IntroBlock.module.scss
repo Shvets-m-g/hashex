@@ -1,0 +1,69 @@
+@import "../../styles/default.styles";
+
+.intro {
+  &Block {
+    @include coverBg;
+    &Container {
+      //min-height: 700px;
+      height: calc(100vh - 90px);
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 50px;
+      padding-bottom: 65px;
+      overflow-x: hidden;
+      @media screen and (max-width: 767px) {
+        padding-bottom: 10px;
+        height: calc(100vh - 64px);
+        min-height: 500px;
+      }
+    }
+  }
+  &Text {
+    margin-top: 15px;
+  }
+  &ButtonContainer {
+    margin-top: 35px;
+    position: relative;
+  }
+  &Arrow {
+    position: absolute;
+    left: 246px;
+    width: 120px;
+    height: 68px;
+    top: 50%;
+  }
+  &Partners {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    margin: 100px -25px 20px;
+    li {
+      margin: 0 25px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      margin-top: 75px;
+      flex-wrap: wrap;
+      margin: 50px -15px;
+      li {
+        margin: 10px 15px;
+        width: calc(25% - 30px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  @media screen and (max-width: 567px) {
+    li {
+      width: calc(33.33% - 30px);
+    }
+  }
+}

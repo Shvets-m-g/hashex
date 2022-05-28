@@ -1,0 +1,54 @@
+@value colors: "../../styles/colors.module.css";
+@value lightGrey, lightBlack, grey, green, red from colors;
+
+.formInput {
+  width: 100%;
+  background: lightGrey;
+  min-height: 45px;
+  padding: 8px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: lightBlack;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Avenir Next';
+  &:focus {
+    border-color: grey;
+  }
+  &.formInputValid {
+  }
+  &.formInputInvalid {
+    border-color: red;
+  }
+}
+.formTextarea {
+  width: 100%;
+  background: lightGrey;
+  min-height: 45px;
+  padding: 8px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: 'Avenir Next';
+  line-height: 120%;
+  color: lightBlack;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  min-height: 116px;
+  &:focus {
+    border-color: grey;
+  }
+  &.formInputValid {
+  }
+  &.formInputInvalid {
+    border-color: red;
+  }
+}

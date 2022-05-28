@@ -1,0 +1,75 @@
+@import "../../styles/default.styles";
+@value colors: "../../styles/colors.module.css";
+@value darkGrey, lightBlack from colors;
+
+.contactsBlock {
+    @include coverBg;
+    padding-top: 107px;
+    padding-bottom: 85px;
+    &Container {
+        display: flex;
+    }
+    @media screen and ( max-width: 992px) and (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 65px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 70px;
+        &Container {
+         flex-direction: column;
+        }
+    }
+}
+.columnInfo {
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        padding-right: 20px;
+    }
+}
+.columnForm {
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 767px) {
+        margin-top: 30px;
+    }
+}
+.contactsSocials {
+    margin-top: 107px;
+    @media screen and ( max-width: 992px) and (min-width: 768px) {
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 767px) {
+        margin-top: 50px;
+    }
+}
+.contactSocial {
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: lightBlack;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    transition: all .3s ease-in-out;
+    span {
+        transition: all .3s ease-in-out;
+        border-bottom: 1px solid transparent;
+    }
+    i {
+        margin-right: 11px;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+    &:hover {
+        span {
+            border-color: lightBlack;
+        }
+    }
+}

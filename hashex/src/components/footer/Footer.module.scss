@@ -1,0 +1,153 @@
+@value colors: "../../styles/colors.module.css";
+@value darkGrey, lightGrey, lightBlack, green, grey from colors;
+
+
+.button {
+    color: blue;
+    display: inline-block;
+}
+.footer {
+    padding-top: 70px;
+    padding-bottom: 67px;
+    background: darkGrey;
+    @media screen and (max-width: 992px) and (min-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 37px;
+    }
+    &Socials {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 36px -7px;
+        li {
+            padding: 0 7px;
+        }
+        @media screen and ( max-width: 992px) and (min-width: 568px) {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    &SocialLink {
+        padding: 6px;
+        background: lightBlack;
+        width: 24px;
+        height: 24px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 2px 2px rgba(grey, 0.25);
+            background: lighten(grey, .05);
+        }
+    }
+    &MenuItem {
+
+    }
+    &MenuColumn {
+        @media screen and ( max-width: 992px) and (min-width: 768px) {
+            margin-bottom: 20px;
+        }
+        @media screen and ( max-width: 767px) {
+            margin-bottom: 15px;
+            width: 33.33%;
+        }
+        @media screen and ( max-width: 567px) {
+            margin-bottom: 15px;
+            width: 50%;
+        }
+    }
+    &MenuSubmenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &Container {
+        min-height: 90px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and ( max-width: 992px) {
+           flex-direction: column;
+        }
+    }
+    &InfoMenu {
+        margin: 0 -10px;
+        padding: 0;
+        list-style: none;
+        @media screen and ( max-width: 992px) and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
+        @media screen and (max-width: 767px) and (min-width: 568px) {
+           width: 33.33%;
+        }
+    }
+    &FullMenu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -10px;
+        padding: 0;
+        list-style: none;
+        @media screen and  (min-width: 993px) {
+            width: 77.3%;
+        }
+        @media screen and (max-width: 992px) {
+            justify-content: flex-start;
+        }
+        @media screen and ( max-width: 992px) and (min-width: 768px) {
+            margin-top: 30px;
+        }
+        @media screen and ( max-width: 767px) {
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+    }
+    &MainInfo {
+        @media screen and (max-width: 992px) and (min-width: 568px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width: 767px) and (min-width: 568px) {
+            align-items: flex-start;
+        }
+
+    }
+    &Logo {
+        max-width: 136px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.navItem {
+    a {
+        padding: 5px 10px;
+        display: inline-block;
+        color: lightGrey;
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 130%;
+        &:hover {
+            text-display: none;
+            color: green;
+        }
+    }
+    &.small {
+        a {
+            font-size: 12px ;
+        }
+    }
+    & + .navItem {
+    }
+}

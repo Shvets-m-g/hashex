@@ -1,0 +1,18 @@
+@value black: #161514;
+@value brown: #A16552;
+@value whiteDefault: #fff;
+@value lightBlack: #414141;
+@value white: #A16552;
+@value green: #C2F051;
+@value noname: #EFEFEF; /*@todo*/
+@value lightBrown: #F5DCB4;
+@value blackDefault: #000000;
+@value darkBrown: #5D5360;
+@value lightGrey: #F1F1F1;
+@value grey: #C4C4C4;
+@value red: #ffaaaa;
+
+@value darkGrey: #262626;
+
+@value greenLinearGradient: background: linear-gradient(91.83deg, #7AF051 16.38%, rgba(194, 240, 81, 0.8) 116.75%);
+

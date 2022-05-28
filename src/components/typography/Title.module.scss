@@ -1,0 +1,58 @@
+.title {
+    &Big {
+        font-family: 'Futura';
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 120%;
+        margin: 0;
+        padding: 0;
+    }
+    &Medium {
+        font-family: 'Futura';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 130%;
+        font-feature-settings: 'tnum' on, 'lnum' on, 'ss05' on, 'case' on, 'ordn' on, 'salt' on, 'ss01' on;
+    }
+    &Small {
+        font-family: 'Futura';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        font-feature-settings: 'pnum' on, 'lnum' on, 'case' on;
+    }
+    @media screen and (max-width: 992px)  and (min-width: 768px){
+        &Big {
+            font-size: 60px;
+        }
+        &Medium {
+            font-size: 42px;
+        }
+        &Small {
+            font-size: 22px;
+        }
+    }
+    @media screen and (max-width: 767px)  and (min-width: 568px){
+        &Big {
+            font-size: 42px;
+        }
+        &Medium {
+            font-size: 36px;
+        }
+        &Small {
+            font-size: 21px;
+        }
+    }
+    @media screen and (max-width: 567px) {
+        &Big {
+            font-size: 40px;
+        }
+        &Medium {
+            font-size: 30px;
+        }
+        &Small {
+            font-size: 20px;
+        }
+    }
+}
